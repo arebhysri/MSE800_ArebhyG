@@ -1,6 +1,9 @@
+#import numpy
 import numpy as np
+#initialize the temperature array
 temperatureArray_in_Celcius = np.array([18.5, 19, 20, 25.0, 2, 30, 13.9])
 
+#define max min
 max_temp = np.max(temperatureArray_in_Celcius)
 min_temp = np.min(temperatureArray_in_Celcius)
 
@@ -14,6 +17,7 @@ fahrenheit_Temperature = (temperatureArray_in_Celcius * 9/5) +32
 print(f"Celsius temperatures: {temperatureArray_in_Celcius}")
 print(f"Fahrenheit temperatures: {fahrenheit_Temperature}")
 
+#find the total days which are above 20
 noOfDaysBelow20 = []
 
 for i in range(len(temperatureArray_in_Celcius)):
