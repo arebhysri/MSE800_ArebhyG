@@ -3,12 +3,14 @@ import numpy as np
 #initialize the temperature array
 temperatureArray_in_Celcius = np.array([18.5, 19, 20, 25.0, 2, 30, 13.9])
 
-#define max min
+#define max min mean
 max_temp = np.max(temperatureArray_in_Celcius)
 min_temp = np.min(temperatureArray_in_Celcius)
+mean_temp = np.mean(temperatureArray_in_Celcius)
 
 print(f"Max Temperature: {max_temp}°C")
 print(f"Min Temperature: {min_temp}°C")
+print(f"Mean Temperature: {mean_temp}°C")
 
 #convert temperature as FerenFahrenheit
 fahrenheit_Temperature = (temperatureArray_in_Celcius * 9/5) +32
@@ -25,3 +27,7 @@ for i in range(len(temperatureArray_in_Celcius)):
         noOfDaysBelow20.append(i)
 
 print("Indices of days where temperature exceeded 20°C:", len(noOfDaysBelow20))
+
+#through where in 
+noOfDays =np.where(temperatureArray_in_Celcius >20)
+print("Indices of days where temperature exceeded 20°C:", len(noOfDays[0]))
