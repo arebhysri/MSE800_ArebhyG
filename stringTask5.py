@@ -8,7 +8,7 @@ class stringProject:
         return self.text
     
     def findLength(self):
-        return len(self.text.replace(" ",""))
+        return len(self.text.split())
     
 def main():
     #Create an instance of the stringProject class
