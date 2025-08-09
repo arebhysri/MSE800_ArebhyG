@@ -4,7 +4,7 @@ class stringProject:
     
     #get the sentence from user
     def getTheInput(self):
-        self.text = input("\n Hi add your sentence ")
+        self.text = input("Hi add your sentence : ")
     
     def findLength(self):
         return len(self.text.replace(" ",""))
