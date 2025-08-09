@@ -5,6 +5,7 @@ class stringProject:
     #get the sentence from user
     def getTheInput(self):
         self.text = input("Hi add your sentence : ")
+        return self.text
     
     def findLength(self):
         return len(self.text.replace(" ",""))
@@ -15,6 +16,7 @@ def main():
 
     #get the sentence from the user
     userInput = sentence.getTheInput()
+    print("This is the sentence you have typed :", userInput)
 
     #call the mtd to find the length
     length = sentence.findLength()
