@@ -1,0 +1,18 @@
+Project Scope
+Yoobee College needs a system to keep all student and staff information in one place. The database will store details about students, lecturers, courses, classes, and departments. It will make it easier to manage student enrollments, assign lecturers to classes, and organize courses and schedules. The goal is to handle records more efficiently, avoid duplicate information, and give clear reports when needed. 
+Main Entities and Their Roles
+    1. Student
+        ◦ Represents individuals enrolled at YB College.
+        ◦ Attributes: Student_ID, First_Name, Last_Name, DOB, Email, Phone, Address, Department_ID.
+    2. Lecturer
+        ◦ Represents teaching staff.
+        ◦ Attributes: Lecturer_ID, First_Name, Last_Name, Email, Phone, Department_ID.
+    3. Department
+        ◦ Represents different academic departments.
+        ◦ Attributes: Department_ID, Department_Name.
+    4. Course
+        ◦ Represents academic courses offered by the college.
+        ◦ Attributes: Course_ID, Course_Name, Credits, Department_ID.
+    5. Class
+        ◦ Represents a specific offering of a course in a given semester.
+        ◦ Attributes: Class_ID, Course_ID , Lecturer_ID.
