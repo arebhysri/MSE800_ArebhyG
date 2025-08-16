@@ -1,5 +1,8 @@
 Project Scope
-Yoobee College needs a system to keep all student and staff information in one place. The database will store details about students, lecturers, courses, classes, and departments. It will make it easier to manage student enrollments, assign lecturers to classes, and organize courses and schedules. The goal is to handle records more efficiently, avoid duplicate information, and give clear reports when needed. 
+Yoobee College needs a system to keep all student and staff information in one place. 
+The database will store details about students, lecturers, courses, classes, and departments. 
+It will make it easier to manage student enrollments, assign lecturers to classes, and organize courses and schedules. 
+The goal is to handle records more efficiently, avoid duplicate information, and give clear reports when needed. 
 Main Entities and Their Roles
     1. Student
         ◦ Represents individuals enrolled at YB College.
