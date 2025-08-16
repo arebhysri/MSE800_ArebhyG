@@ -23,12 +23,21 @@ class readFile:
                 wds = lin.split()
                 wordcount += len(wds)
         print("Total number of words:", wordcount)
+    
+    def countTheWords2(self):
+        with open(self.inputFile, "r", encoding="UTF-8") as countFile:
+            wordcount = 0
+            data = countFile.read()
+            w = data.split()
+            wordcount+=len(w)
+        print("Total number of words:", wordcount)
 
 def main():
     fileManager = readFile("demo.txt","output.txt")
     fileManager.readingFile()
     fileManager.writingFile()
     fileManager.countTheWords()
+    fileManager.countTheWords2()
 
 if __name__ == "__main__":
     main()
