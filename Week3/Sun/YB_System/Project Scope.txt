@@ -19,3 +19,25 @@ Main Entities and Their Roles
     5. Class
         ◦ Represents a specific offering of a course in a given semester.
         ◦ Attributes: Class_ID, Course_ID , Lecturer_ID.
+
+
+USE CASE
+    Actors - students
+             lecturers
+             administrator
+    
+    Admin can Login the system
+          can entroll the students
+          can entroll the lecturers
+          can add the courses
+
+    Lecturer can add material for courses
+             can add assignments
+             can review the assignments
+             can release the results of the assignments
+
+    Student can view the courses that he entrolled
+            can view the course material
+            can submit the assignments' task
+            can view the results
+    
