@@ -40,4 +40,5 @@ USE CASE
             can view the course material
             can submit the assignments' task
             can view the results
+            can update the student's details
     
