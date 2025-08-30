@@ -7,7 +7,7 @@ class student(people):
         super().__init__(name, age, id, address)
         self.academic_records=academic_records
     
-    def show_student_details(self):
+    def show_Details(self):
         super().show_Details()
         print("Academic Records : " , self.academic_records)
 
@@ -17,7 +17,7 @@ class Staff(people):
         super().__init__(name, age, id, address)
         self.tax_code= tax_code
     
-    def show_staff_details(self):
+    def show_Details(self):
         super().show_Details()
         print("Tax Code : ", self.tax_code)
 
@@ -27,8 +27,8 @@ class academicStaff(Staff):
         super().__init__(name, age, id, address, tax_code)
         self.salary = salary
     
-    def show_academic_staff_details(self):
-        super().show_staff_details()
+    def show_Details(self):
+        super().show_Details()
         print("Salary : ", self.salary)
 
 # general staff sub class that inheritent from staff sub class
@@ -37,6 +37,6 @@ class generalStaff(Staff):
         super().__init__(name, age, id, address, tax_code)
         self.pay_rate = pay_rate
     
-    def show_general_staff_details(self):
-        super().show_staff_details()
+    def show_Details(self):
+        super().show_Details()
         print("Pay Rate : ", self.pay_rate)

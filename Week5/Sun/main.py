@@ -7,13 +7,13 @@ def main():
     staff = generalStaff("Charlie", "789 Admin Ln", 35, "G301", "TX456", 25)
 
     print("=== Student ===")
-    student_detail.show_student_details()
+    student_detail.show_Details()
 
     print("\n=== Academic ===")
-    academic.show_academic_staff_details()
+    academic.show_Details()
 
     print("\n=== General Staff ===")
-    staff.show_staff_details()
+    staff.show_Details()
 
 if __name__ == "__main__":
     main()
