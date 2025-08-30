@@ -1,0 +1,11 @@
+Can we update the code with adding a "Course" class to Week 5, Activity 3?
+
+Yes, of course we can add a Course class to the system. However, we need to carefully consider whether Course conceptually belongs to the same hierarchy as the Person class. Specifically:
+
+If Course does not share common attributes with Person—such as name, age, id, or address—then it should not inherit from Person.
+
+Inheritance is only appropriate when there is an "is-a" relationship. For example, a Student is a Person, but a Course is not a Person.
+
+Instead, Course should be defined as a separate class, and relationships between Course and Person (e.g., instructor or enrolled students) should be modeled through composition or association, not inheritance.
+
+
