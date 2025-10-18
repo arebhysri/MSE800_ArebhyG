@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <title>Display Image</title>
+</head>
+<body>
+    <div class="container col-md-6 offset-md-3" style="padding: 10px;">
+        <div class="card">
+                <div class="card-body">
+                    <div class="col-12">
+                        <h1 class="primary">Calculate your temperature</h1>
+                    </div>
+                    <div class="col-12">
+                        <!-- Add result / error display here -->
+                        {% if error %}
+                        <div class="alert alert-danger mt-3">{{ error }}</div>
+                        {% endif %}
+                        {% if result is defined %}
+                        <div class="alert alert-success mt-3">
+                            {{ value }} °{{ frm }} = <strong>{{ result }}</strong> °{{ to }}
+                        </div>
+                        {% endif %}
+                    </div>
+                    <div class="col-12">
+                        <form action="{{ url_for('calculate') }}" method="post" enctype="multipart/form-data">
+                            <div class="col-md-3">
+                                <label for="temperature" class="form-label">Enter Temperature value:</label>
+                                <input type="number" step="any" name="temperature" class="form-control" required value="{{value if value is defined else ''}}">
+                            </div>
+                            <div class="col-md-3">
+                                <label class="form-label">From</label>
+                                <select name="from_unit" class="form-select">
+                                <option value="C" {% if frm=='C' %}selected{% endif %}>Celsius (C)</option>
+                                <option value="F" {% if frm=='F' %}selected{% endif %}>Fahrenheit (F)</option>
+                                <option value="K" {% if frm=='K' %}selected{% endif %}>Kelvin (K)</option>
+                                </select>
+                            </div>
+                            <div class="col-md-3">
+                                <label class="form-label">To</label>
+                                <select name="to_unit" class="form-select">
+                                <option value="C" {% if to=='C' %}selected{% endif %}>Celsius (C)</option>
+                                <option value="F" {% if to=='F' %}selected{% endif %}>Fahrenheit (F)</option>
+                                <option value="K" {% if to=='K' %}selected{% endif %}>Kelvin (K)</option>
+                                </select>
+                            </div>
+
+                            <div class="col-md-3">
+                                <button class="btn btn-primary" type="submit">Convert</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+       
+    </div>
+
+</body>
+</html>
