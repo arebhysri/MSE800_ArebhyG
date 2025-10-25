@@ -2,7 +2,6 @@ from google import genai
 from google.genai import types
 import os
 
-# Your Google Gemini API key
 GEMINI_API_KEY = "AIzaSyCXFko0MdTkWGg-h8OkVx1k2S7mzR47bNM"
 
 def instructor_chatbot():
@@ -44,11 +43,11 @@ Organize by day with a maximum of three activities per day.
             )
         )
         
-        print("\n🌍 My Name is Hadi, your AI Itinerary expert:\n")
+        print("\n🌍 My Name is Abi, your AI Itinerary expert:\n")
         print(response.text)
         
     except Exception as e:
-        print(f"❌ Error communicating with Gemini API: {e}")
+        print(f"❌ Error communicating with Travel API: {e}")
 
 if __name__ == "__main__":
     instructor_chatbot()
