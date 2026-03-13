@@ -2,9 +2,9 @@ import sys
 import os
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
-from Service.user_service import UserService
-from Interface.user_interface import IUserManagement
-from Database.database import DatabaseConnection
+from service.user_service import UserService
+from interface.user_interface import IUserManagement
+from database.database import DatabaseConnection
 from typing import Optional
 import sqlite3
 import threading

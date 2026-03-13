@@ -3,11 +3,11 @@ import os
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
 import logging
-from Interface.booking_interface import IBookingManagement
-from Utils.booking_utils import calculate_price
-from Database.database import DatabaseConnection, create_tables
+from interface.booking_interface import IBookingManagement
+from utils.booking_utils import calculate_price
+from database.database import DatabaseConnection, create_tables
 
-from Enum.bookingAction import BookingAction
+from enums.bookingAction import BookingAction
 from typing import Optional, List, Dict, Any
 from datetime import datetime,timedelta
 from contextlib import closing

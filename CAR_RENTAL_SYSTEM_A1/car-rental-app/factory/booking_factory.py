@@ -11,9 +11,9 @@ _lock = threading.Lock()
 
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
-from Service.booking_service import BookingService
-from Interface.booking_interface import IBookingManagement
-from Database.database import DatabaseConnection
+from service.booking_service import BookingService
+from interface.booking_interface import IBookingManagement
+from database.database import DatabaseConnection
 
 _lock = threading.Lock()
 

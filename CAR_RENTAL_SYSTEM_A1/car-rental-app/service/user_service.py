@@ -2,10 +2,10 @@ import sys
 import os
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
-from Interface.user_interface import IUserManagement
-from Utils.user_utils import validate_email, validate_password, hash_password, check_password
-from Database.database import DatabaseConnection, create_tables
-from Enum.usre_role import user_role
+from interface.user_interface import IUserManagement
+from utils.user_utils import validate_email, validate_password, hash_password, check_password
+from database.database import DatabaseConnection, create_tables
+from enums.usre_role import user_role
 from typing import Optional, List, Dict, Any
 from datetime import datetime
 from contextlib import closing

@@ -3,20 +3,20 @@ import streamlit as st
 import sys
 import os
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
-from Factory.users_factory import UserFactory
-from Factory.car_factory import CarFactory
-from Factory.booking_factory import BookingFactory
+from factory.users_factory import UserFactory
+from factory.car_factory import CarFactory
+from factory.booking_factory import BookingFactory
 
-from Enum.usre_role import user_role
-from Enum.bookingAction import BookingAction
+from enums.usre_role import user_role
+from enums.bookingAction import BookingAction
 # from Enum.bookingAction import BookingAction as booking_action
-from Enum.carType import CarType
-from Enum.fuelType import FuelType
+from enums.carType import CarType
+from enums.fuelType import FuelType
 from datetime import datetime, timedelta
 
-from Models.user import User
-from Models.car import Car
-from Models.booking import Booking
+from models.user import User
+from models.car import Car
+from models.booking import Booking
 import pandas as pd
 from PIL import Image
 import requests

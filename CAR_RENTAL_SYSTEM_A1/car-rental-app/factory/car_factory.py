@@ -2,9 +2,9 @@ import sys
 import os
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
-from Service.car_service import CarService
-from Service.car_service import ICarManagement
-from Database.database import DatabaseConnection
+from service.car_service import CarService
+from service.car_service import ICarManagement
+from database.database import DatabaseConnection
 import sqlite3
 import threading
 from typing import Optional

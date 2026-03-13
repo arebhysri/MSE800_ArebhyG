@@ -2,9 +2,9 @@ import sys
 import os
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
-from Interface.car_interface import ICarManagement
-from Utils.car_utils import logger
-from Database.database import DatabaseConnection, create_tables
+from interface.car_interface import ICarManagement
+from utils.car_utils import logger
+from database.database import DatabaseConnection, create_tables
 from typing import Optional, List, Dict, Any
 from datetime import datetime
 from contextlib import closing
